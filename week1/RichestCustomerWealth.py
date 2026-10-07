@@ -9,12 +9,3 @@ class Solution(object):
                richest = wealth
        return richest
 
-solution = Solution()
-
-accounts = [
-    [1, 2, 3],
-    [3, 2, 1],
-    [4, 2, 5]
-]
-
-print(solution.maximumWealth(accounts))
