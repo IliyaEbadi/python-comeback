@@ -47,3 +47,58 @@ def sorta_sum(a, b):
     return 20
   else:
     return a + b
+
+#List-1 > first_last6
+
+def first_last6(nums):
+  if nums[0]==6 or nums[-1] == 6:
+    return True
+  else:
+    return False
+#List-1 > common_end
+def common_end(a, b):
+  if a[0] == b[0] or a[-1]== b[-1]:
+    return True
+  else:
+    return False
+
+#List-1 > sum3
+def sum3(nums):
+  sum = 0
+  for i in range(len(nums)):
+    sum += nums[i]
+  return sum
+
+#List-1 > rotate_left3
+
+def rotate_left3(nums):
+    result = []
+    for i in range(1, len(nums)):
+        result.append(nums[i])
+
+    result.append(nums[0])
+
+    return result
+#List-1 > reverse3
+
+def reverse3(nums):
+    result = []
+
+    for i in range(len(nums) - 1, -1, -1):
+        result.append(nums[i])
+
+    return result
+
+#List-1 > max_end3
+
+def max_end3(nums):
+    if nums[0] > nums[-1]:
+        largest = nums[0]
+    else:
+        largest = nums[-1]
+
+    nums[0] = largest
+    nums[1] = largest
+    nums[2] = largest
+
+    return nums
